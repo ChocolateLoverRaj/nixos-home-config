@@ -25,6 +25,12 @@
     microsoft-edge
     git-credential-manager
     parabolic
+    element-desktop
+    discord
+    nixpkgs-fmt
+    tldr
+    distrobox
+    toolbox
   ];
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
@@ -68,7 +74,19 @@
     enable = true;
     extensions = with pkgs.vscode-extensions; [
       jnoortheen.nix-ide
+      tabnine.tabnine-vscode
     ];
+    keybindings = [
+      {
+        key = "ctrl+t";
+        command = "explorer.newFile";
+      }
+    ];
+    userSettings = {
+      "editor.formatOnSave" = true;
+      "git.autofetch" = true;
+      "workbench.editor.wrapTabs" = true;
+    };
   };
 
   nixpkgs.config.allowUnfree = true;
@@ -92,6 +110,13 @@
       # colorScheme = "BreezeDark";
       lookAndFeel = "org.kde.breezedark.desktop";
       iconTheme = "candy-icons";
+    };
+  };
+
+  dconf.settings = {
+    "org/virt-manager/virt-manager/connections" = {
+      autoconnect = [ "qemu:///system" ];
+      uris = [ "qemu:///system" ];
     };
   };
 }
