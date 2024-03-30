@@ -24,6 +24,7 @@
     jetbrains.rust-rover
     microsoft-edge
     git-credential-manager
+    parabolic
   ];
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
