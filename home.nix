@@ -91,6 +91,7 @@
       "editor.formatOnSave" = true;
       "git.autofetch" = true;
       "workbench.editor.wrapTabs" = true;
+      "tabnine.experimentalAutoImports" = true;
     };
   };
 
