@@ -31,6 +31,11 @@
     tldr
     distrobox
     toolbox
+    baobab
+    mission-center
+    eza
+    # This looks super duper cool
+    btop
   ];
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
