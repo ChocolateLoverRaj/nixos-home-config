@@ -21,7 +21,11 @@
     nodejs
     github-desktop
     candy-icons
+    # Rust
     jetbrains.rust-rover
+    rustup
+    clang
+
     microsoft-edge
     git-credential-manager
     parabolic
@@ -36,6 +40,17 @@
     eza
     # This looks super duper cool
     btop
+    flameshot
+    kdePackages.kdenlive
+    obs-studio
+    ungoogled-chromium
+    firefox
+    warp-terminal
+    libreoffice-qt
+    lunar-client
+    kdePackages.plasmatube
+    # For automatically entering nix dev environments
+    direnv
   ];
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
@@ -90,8 +105,10 @@
     userSettings = {
       "editor.formatOnSave" = true;
       "git.autofetch" = true;
+      "git.confirmSync" = false;
       "workbench.editor.wrapTabs" = true;
       "tabnine.experimentalAutoImports" = true;
+      "git.enableSmartCommit" = true;
     };
   };
 
@@ -117,6 +134,17 @@
       lookAndFeel = "org.kde.breezedark.desktop";
       iconTheme = "candy-icons";
     };
+
+    shortcuts = {
+      "services/dev.warp.Warp.desktop"."_launch" = "Ctrl+Alt+T";
+      "services/org.kde.konsole.desktop"."_launch" = [ ];
+    };
+
+    configFile = {
+      "kdeglobals"."General"."TerminalApplication".value = "warp-terminal %U";
+      "kdeglobals"."General"."TerminalService".value = "dev.warp.Warp.desktop";
+      "kcminputrc"."Libinput/1267/12859/ELAN2703:00 04F3:323B Touchpad"."NaturalScroll".value = true;
+    };
   };
 
   dconf.settings = {
@@ -124,5 +152,18 @@
       autoconnect = [ "qemu:///system" ];
       uris = [ "qemu:///system" ];
     };
+  };
+
+  programs.direnv = {
+    enable = true;
+    enableBashIntegration = true; # see note on other shells below
+    nix-direnv.enable = true;
+  };
+
+  programs.bash = {
+    enable = true;
+    bashrcExtra = ''
+      export PATH=$PATH:~/.cargo/bin
+    '';
   };
 }
