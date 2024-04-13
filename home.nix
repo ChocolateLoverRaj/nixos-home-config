@@ -95,6 +95,7 @@
     extensions = with pkgs.vscode-extensions; [
       jnoortheen.nix-ide
       tabnine.tabnine-vscode
+      rust-lang.rust-analyzer
     ];
     keybindings = [
       {
@@ -165,5 +166,17 @@
     bashrcExtra = ''
       export PATH=$PATH:~/.cargo/bin
     '';
+  };
+
+  programs.atuin = {
+    enable = true;
+  };
+
+  programs.zoxide = {
+    enable = true;
+  };
+
+  programs.fzf = {
+    enable = true;
   };
 }
