@@ -51,6 +51,8 @@
     kdePackages.plasmatube
     # For automatically entering nix dev environments
     direnv
+
+    freetube
   ];
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
