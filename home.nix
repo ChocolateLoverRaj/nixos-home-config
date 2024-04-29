@@ -44,7 +44,6 @@
     obs-studio
     ungoogled-chromium
     firefox
-    warp-terminal
     libreoffice-qt
     lunar-client
     kdePackages.plasmatube
@@ -145,7 +144,7 @@
     };
 
     configFile = {
-      "kdeglobals"."General"."TerminalApplication".value = "warp-terminal %U";
+      # "kdeglobals"."General"."TerminalApplication".value = "warp-terminal %U";
       "kdeglobals"."General"."TerminalService".value = "tabby.desktop";
       "kcminputrc"."Libinput/1267/12859/ELAN2703:00 04F3:323B Touchpad"."NaturalScroll".value = true;
     };
