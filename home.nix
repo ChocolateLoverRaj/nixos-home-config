@@ -54,6 +54,8 @@
     qbittorrent-qt5
     (callPackage ./tabby.nix { })
     brave
+    cosmic-term
+    cosmic-files
   ];
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
