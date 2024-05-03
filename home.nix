@@ -15,6 +15,11 @@
   # release notes.
   home.stateVersion = "23.11"; # Please read the comment before changing.
 
+  imports = [
+    ./git.nix
+    ./vscode.nix
+  ];
+
   # The home.packages option allows you to install Nix packages into your
   # environment.
   home.packages = with pkgs; [
@@ -25,7 +30,6 @@
     rustup
     clang
 
-    microsoft-edge
     git-credential-manager
     parabolic
     element-desktop
@@ -41,7 +45,6 @@
     btop
     flameshot
     kdePackages.kdenlive
-    obs-studio
     ungoogled-chromium
     firefox
     libreoffice-qt
@@ -56,6 +59,7 @@
     brave
     cosmic-term
     cosmic-files
+    freecad
   ];
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
@@ -95,41 +99,7 @@
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
 
-  programs.vscode = {
-    enable = true;
-    extensions = with pkgs.vscode-extensions; [
-      jnoortheen.nix-ide
-      tabnine.tabnine-vscode
-      rust-lang.rust-analyzer
-    ];
-    keybindings = [
-      {
-        key = "ctrl+t";
-        command = "explorer.newFile";
-      }
-    ];
-    userSettings = {
-      "editor.formatOnSave" = true;
-      "git.autofetch" = true;
-      "git.confirmSync" = false;
-      "workbench.editor.wrapTabs" = true;
-      "tabnine.experimentalAutoImports" = true;
-      "git.enableSmartCommit" = true;
-    };
-  };
-
   nixpkgs.config.allowUnfree = true;
-
-  programs.git = {
-    enable = true;
-    userName = "Rajas Paranjpe";
-    userEmail = "52586855+ChocolateLoverRaj@users.noreply.github.com";
-
-    extraConfig = {
-      init.defaultBranch = "main";
-      safe.directory = "/etc/nixos";
-    };
-  };
 
   programs.plasma = {
     enable = true;
@@ -167,9 +137,6 @@
 
   programs.bash = {
     enable = true;
-    bashrcExtra = ''
-      export PATH=$PATH:~/.cargo/bin
-    '';
   };
 
   programs.atuin = {
@@ -181,6 +148,10 @@
   };
 
   programs.fzf = {
+    enable = true;
+  };
+
+  programs.obs-studio = {
     enable = true;
   };
 }
