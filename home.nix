@@ -61,6 +61,7 @@
     cosmic-files
     freecad
     zed-editor
+    radicle-cli
   ];
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
