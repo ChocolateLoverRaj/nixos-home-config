@@ -36,6 +36,7 @@
     element-desktop
     discord
     nixpkgs-fmt
+    nixfmt-rfc-style
     tldr
     distrobox
     toolbox
