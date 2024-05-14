@@ -19,6 +19,7 @@
     ./git.nix
     ./vscode.nix
     ./plasma.nix
+    ./bash.nix
   ];
 
   # The home.packages option allows you to install Nix packages into your
@@ -64,6 +65,7 @@
     freecad
     zed-editor
     radicle-cli
+    gh
   ];
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
@@ -116,22 +118,6 @@
     enable = true;
     enableBashIntegration = true; # see note on other shells below
     nix-direnv.enable = true;
-  };
-
-  programs.bash = {
-    enable = true;
-  };
-
-  programs.atuin = {
-    enable = true;
-  };
-
-  programs.zoxide = {
-    enable = true;
-  };
-
-  programs.fzf = {
-    enable = true;
   };
 
   programs.obs-studio = {
