@@ -8,6 +8,7 @@
       tabnine.tabnine-vscode
       rust-lang.rust-analyzer
       mkhl.direnv
+      ms-vscode.cpptools-extension-pack
     ];
     keybindings = [
       {
