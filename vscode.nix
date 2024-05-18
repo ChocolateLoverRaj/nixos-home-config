@@ -24,6 +24,7 @@
       "tabnine.experimentalAutoImports" = true;
       "git.enableSmartCommit" = true;
       "rust-analyzer.procMacro.attributes.enable" = true;
+      "git.allowForcePush" = true;
     };
   };
 }
