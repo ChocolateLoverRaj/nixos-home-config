@@ -64,7 +64,7 @@
     cosmic-files
     freecad
     zed-editor
-    radicle-cli
+    radicle-node
     gh
   ];
 
