@@ -55,7 +55,7 @@
     kdePackages.plasmatube
     # For automatically entering nix dev environments
     direnv
-
+    prismlauncher
     freetube
     qbittorrent-qt5
     (callPackage ./tabby.nix { })
