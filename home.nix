@@ -68,6 +68,7 @@
     gh
     kdePackages.kasts
     mindustry-wayland
+    kdePackages.kcalc
   ];
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
