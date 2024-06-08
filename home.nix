@@ -27,11 +27,6 @@
   home.packages = with pkgs; [
     nodejs
     github-desktop
-    # Rust
-    jetbrains.rust-rover
-    rustup
-    clang
-
     git-credential-manager
     parabolic
     element-desktop
