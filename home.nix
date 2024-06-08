@@ -64,6 +64,7 @@
     kdePackages.kasts
     mindustry-wayland
     kdePackages.kcalc
+    jetbrains.rust-rover
   ];
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
