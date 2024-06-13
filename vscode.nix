@@ -9,6 +9,7 @@
       rust-lang.rust-analyzer
       mkhl.direnv
       ms-vscode.cpptools-extension-pack
+      ms-vscode-remote.remote-ssh
     ];
     keybindings = [
       {
