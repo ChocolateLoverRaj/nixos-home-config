@@ -5,7 +5,6 @@
     enable = true;
     extensions = with pkgs.vscode-extensions; [
       jnoortheen.nix-ide
-      tabnine.tabnine-vscode
       rust-lang.rust-analyzer
       mkhl.direnv
       ms-vscode.cpptools-extension-pack
