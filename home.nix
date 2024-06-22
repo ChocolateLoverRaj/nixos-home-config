@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ config, pkgs, lib, ... }:
 
 {
   # Home Manager needs a bit of information about you and the paths it should
@@ -17,7 +17,7 @@
 
   imports = [
     ./git.nix
-    ./vscode.nix
+    ./vscodium.nix
     ./plasma.nix
     ./bash.nix
   ];
@@ -104,7 +104,13 @@
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
 
-  nixpkgs.config.allowUnfree = true;
+  # Allow some unfree packages
+  nixpkgs.config.allowUnfreePredicate = pkg: builtins.elem (lib.getName pkg) [
+    "vscode-extension-ms-vscode-remote-remote-ssh"
+    "discord"
+    "lunar-client"
+    "rust-rover"
+  ];
 
   dconf.settings = {
     "org/virt-manager/virt-manager/connections" = {
