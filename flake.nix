@@ -16,15 +16,16 @@
         home-manager.follows = "home-manager";
       };
     };
+    vscode-server.url = "github:nix-community/nixos-vscode-server";
   };
 
-  outputs = { nixpkgs, home-manager, plasma-manager, ... }:
+  outputs = { nixpkgs, home-manager, plasma-manager, vscode-server, ... }:
     let
       system = "x86_64-linux";
       pkgs = nixpkgs.legacyPackages.${system};
     in
     {
-      homeConfigurations."rajas" = home-manager.lib.homeManagerConfiguration {
+      homeConfigurations."rajas@jinlon" = home-manager.lib.homeManagerConfiguration {
         inherit pkgs;
 
         # Specify your home configuration modules here, for example,
@@ -36,6 +37,25 @@
 
         # Optionally use extraSpecialArgs
         # to pass through arguments to home.nix
+      };
+      homeConfigurations."rajas@gaming-computer" = home-manager.lib.homeManagerConfiguration {
+        inherit pkgs;
+
+        modules = [
+          vscode-server.homeModules.default
+          ({ config, pkgs, ... }: {
+            home.username = "rajas";
+            home.homeDirectory = "/home/rajas";
+            home.stateVersion = "24.05";
+            services.vscode-server.enable = true;
+            home.packages = with pkgs; [
+              btop
+              nixpkgs-fmt
+            ];
+          })
+          ./git.nix
+          ./bash.nix
+        ];
       };
     };
 }
