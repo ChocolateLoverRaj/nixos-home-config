@@ -65,6 +65,8 @@
     mindustry-wayland
     kdePackages.kcalc
     jetbrains.rust-rover
+    jetbrains.gateway
+    hoppscotch
   ];
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
@@ -110,6 +112,7 @@
     "discord"
     "lunar-client"
     "rust-rover"
+    "gateway"
   ];
 
   dconf.settings = {
