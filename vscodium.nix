@@ -26,6 +26,9 @@
       "git.enableSmartCommit" = true;
       "rust-analyzer.procMacro.attributes.enable" = true;
       "git.allowForcePush" = true;
+      "terminal.integrated.profiles.linux" = {
+        "bash" = null;
+      };
     };
   };
 }
