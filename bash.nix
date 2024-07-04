@@ -8,6 +8,9 @@
 
   programs.atuin = {
     enable = true;
+    settings = {
+      filter_mode_shell_up_key_binding = "session";
+    };
   };
 
   programs.zoxide = {
