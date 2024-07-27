@@ -30,6 +30,7 @@
     git-credential-manager
     parabolic
     element-desktop
+    fractal
     discord
     nixpkgs-fmt
     nixfmt-rfc-style
@@ -67,6 +68,7 @@
     jetbrains.rust-rover
     jetbrains.gateway
     hoppscotch
+    fritzing
   ];
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
