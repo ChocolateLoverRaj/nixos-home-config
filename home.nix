@@ -56,8 +56,6 @@
     qbittorrent-qt5
     (callPackage ./tabby.nix { })
     brave
-    cosmic-term
-    cosmic-files
     freecad
     zed-editor
     radicle-node
@@ -112,7 +110,7 @@
   nixpkgs.config.allowUnfreePredicate = pkg: builtins.elem (lib.getName pkg) [
     "vscode-extension-ms-vscode-remote-remote-ssh"
     "discord"
-    "lunar-client"
+    "lunarclient"
     "rust-rover"
     "gateway"
   ];

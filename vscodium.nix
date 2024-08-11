@@ -29,6 +29,7 @@
       "terminal.integrated.profiles.linux" = {
         "bash" = null;
       };
+      "git.openRepositoryInParentFolders" = "always";
     };
   };
 }
