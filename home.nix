@@ -20,6 +20,7 @@
     ./vscodium.nix
     ./plasma.nix
     ./bash.nix
+    ./gnome.nix
   ];
 
   # The home.packages option allows you to install Nix packages into your
@@ -67,6 +68,7 @@
     jetbrains.gateway
     hoppscotch
     fritzing
+    librepcb
   ];
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
