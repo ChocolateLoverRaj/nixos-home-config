@@ -16,5 +16,9 @@
         powerButtonAction = "sleep";
       };
     };
+
+    configFile = {
+      "kwinrc"."Plugins"."shakecursorEnabled" = false;
+    };
   };
 }
