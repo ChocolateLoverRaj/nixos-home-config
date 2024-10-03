@@ -53,22 +53,23 @@
     # For automatically entering nix dev environments
     direnv
     prismlauncher
-    freetube
+    # freetube
     qbittorrent-qt5
     (callPackage ./tabby.nix { })
     brave
     freecad
     zed-editor
-    radicle-node
+    # radicle-node
     gh
     kdePackages.kasts
-    mindustry-wayland
+    # mindustry-wayland
     kdePackages.kcalc
-    jetbrains.rust-rover
-    jetbrains.gateway
+    # jetbrains.rust-rover
+    # jetbrains.gateway
     hoppscotch
     fritzing
-    librepcb
+    # librepcb
+    mangohud
   ];
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
