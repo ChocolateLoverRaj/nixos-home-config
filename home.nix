@@ -54,7 +54,7 @@
     direnv
     prismlauncher
     # freetube
-    qbittorrent-qt5
+    qbittorrent
     (callPackage ./tabby.nix { })
     brave
     freecad
@@ -70,6 +70,8 @@
     fritzing
     # librepcb
     mangohud
+    kicad
+    jdk
   ];
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
