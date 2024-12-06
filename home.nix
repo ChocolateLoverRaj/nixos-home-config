@@ -48,7 +48,7 @@
     ungoogled-chromium
     firefox
     libreoffice-qt
-    lunar-client
+    # lunar-client
     kdePackages.plasmatube
     # For automatically entering nix dev environments
     direnv
@@ -72,6 +72,7 @@
     mangohud
     kicad
     jdk
+    spacedrive
   ];
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
