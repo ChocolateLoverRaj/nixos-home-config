@@ -1,4 +1,8 @@
-{ config, pkgs, lib, ... }:
+{ config
+, pkgs
+, lib
+, ...
+}:
 
 {
   # Home Manager needs a bit of information about you and the paths it should
@@ -21,6 +25,8 @@
     ./plasma.nix
     ./bash.nix
     ./gnome.nix
+    ./nextcloud.nix
+    ./direnv.nix
   ];
 
   # The home.packages option allows you to install Nix packages into your
@@ -28,7 +34,6 @@
   home.packages = with pkgs; [
     nodejs
     github-desktop
-    git-credential-manager
     parabolic
     element-desktop
     fractal
@@ -39,7 +44,7 @@
     distrobox
     toolbox
     baobab
-    mission-center
+    # mission-center
     eza
     # This looks super duper cool
     btop
@@ -51,11 +56,10 @@
     # lunar-client
     kdePackages.plasmatube
     # For automatically entering nix dev environments
-    direnv
     prismlauncher
     # freetube
     qbittorrent
-    (callPackage ./tabby.nix { })
+    # (callPackage ./tabby.nix { })
     brave
     freecad
     zed-editor
@@ -73,6 +77,9 @@
     kicad
     jdk
     spacedrive
+    git-credential-manager
+    sshfs
+    qalculate-qt
   ];
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
@@ -113,13 +120,15 @@
   programs.home-manager.enable = true;
 
   # Allow some unfree packages
-  nixpkgs.config.allowUnfreePredicate = pkg: builtins.elem (lib.getName pkg) [
-    "vscode-extension-ms-vscode-remote-remote-ssh"
-    "discord"
-    "lunarclient"
-    "rust-rover"
-    "gateway"
-  ];
+  nixpkgs.config.allowUnfreePredicate =
+    pkg:
+    builtins.elem (lib.getName pkg) [
+      "vscode-extension-ms-vscode-remote-remote-ssh"
+      "discord"
+      "lunarclient"
+      "rust-rover"
+      "gateway"
+    ];
 
   dconf.settings = {
     "org/virt-manager/virt-manager/connections" = {
@@ -128,13 +137,14 @@
     };
   };
 
-  programs.direnv = {
+  programs.obs-studio = {
     enable = true;
-    enableBashIntegration = true; # see note on other shells below
-    nix-direnv.enable = true;
   };
 
-  programs.obs-studio = {
+  programs.git = {
+    extraConfig.credential.helper = "manager";
+    extraConfig.credential."https://github.com".username = "ChocolateLoverRaj";
+    extraConfig.credential.credentialStore = "cache";
     enable = true;
   };
 }

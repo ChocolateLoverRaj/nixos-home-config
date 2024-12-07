@@ -1,4 +1,10 @@
-{ stdenv, fetchurl, pkgs, lib, alsa-lib }:
+{
+  stdenv,
+  fetchurl,
+  pkgs,
+  lib,
+  alsa-lib,
+}:
 
 stdenv.mkDerivation rec {
   name = "tabby-terminal";

@@ -19,7 +19,14 @@
     vscode-server.url = "github:nix-community/nixos-vscode-server";
   };
 
-  outputs = { nixpkgs, home-manager, plasma-manager, vscode-server, ... }:
+  outputs =
+    {
+      nixpkgs,
+      home-manager,
+      plasma-manager,
+      vscode-server,
+      ...
+    }:
     let
       system = "x86_64-linux";
       pkgs = nixpkgs.legacyPackages.${system};
