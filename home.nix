@@ -80,6 +80,11 @@
     git-credential-manager
     sshfs
     qalculate-qt
+    nixd
+    nil
+    rclone-browser
+    ytdownloader
+    networkmanagerapplet
   ];
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
