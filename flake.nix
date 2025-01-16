@@ -20,12 +20,11 @@
   };
 
   outputs =
-    {
-      nixpkgs,
-      home-manager,
-      plasma-manager,
-      vscode-server,
-      ...
+    { nixpkgs
+    , home-manager
+    , plasma-manager
+    , vscode-server
+    , ...
     }:
     let
       system = "x86_64-linux";
@@ -44,6 +43,14 @@
 
         # Optionally use extraSpecialArgs
         # to pass through arguments to home.nix
+      };
+      homeConfigurations."rajas@robo360" = home-manager.lib.homeManagerConfiguration {
+        inherit pkgs;
+
+        modules = [
+          ./robo360.nix
+          ./bash.nix
+        ];
       };
     };
 }
