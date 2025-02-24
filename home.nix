@@ -25,7 +25,7 @@
     ./plasma.nix
     ./bash.nix
     ./gnome.nix
-    ./nextcloud.nix
+    #./nextcloud.nix
     ./direnv.nix
   ];
 
@@ -82,9 +82,11 @@
     qalculate-qt
     nixd
     nil
+    rclone
     rclone-browser
     ytdownloader
     networkmanagerapplet
+    thunderbird
   ];
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
