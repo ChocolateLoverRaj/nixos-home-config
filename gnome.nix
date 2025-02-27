@@ -21,4 +21,17 @@
       }
     ];
   };
+
+  dconf.settings = {
+    "org/gnome/desktop/interface" = {
+      color-scheme = "prefer-dark";
+      clock-format = "12h";
+      clock-show-weekday = true;
+    };
+    "org/gnome/mutter" = {
+      edge-tiling = true;
+      dynamic-workspaces = true;
+      experimental-features = [ "scale-monitor-framebuffer" ];
+    };
+  };
 }

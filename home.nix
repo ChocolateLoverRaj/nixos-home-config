@@ -1,7 +1,8 @@
-{ config
-, pkgs
-, lib
-, ...
+{
+  config,
+  pkgs,
+  lib,
+  ...
 }:
 
 {
@@ -149,9 +150,9 @@
   };
 
   programs.git = {
-    extraConfig.credential.helper = "manager";
-    extraConfig.credential."https://github.com".username = "ChocolateLoverRaj";
-    extraConfig.credential.credentialStore = "cache";
+    # extraConfig.credential.helper = "manager";
+    # extraConfig.credential."https://github.com".username = "ChocolateLoverRaj";
+    # extraConfig.credential.credentialStore = "cache";
     enable = true;
   };
 }
