@@ -31,7 +31,10 @@
     "org/gnome/mutter" = {
       edge-tiling = true;
       dynamic-workspaces = true;
-      experimental-features = [ "variable-refresh-rate" ];
+      experimental-features = [
+        "variable-refresh-rate"
+        "scale-monitor-framebuffer"
+      ];
     };
   };
 }
