@@ -19,6 +19,9 @@
       {
         package = caffeine;
       }
+      {
+        package = tailscale-qs;
+      }
     ];
   };
 
