@@ -13,9 +13,9 @@
       {
         package = battery-time-percentage-compact;
       }
-      {
-        package = gsconnect;
-      }
+      # {
+      #   package = gsconnect;
+      # }
       {
         package = caffeine;
       }
