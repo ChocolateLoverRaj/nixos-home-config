@@ -148,9 +148,9 @@
     };
   };
 
-  programs.obs-studio = {
-    enable = true;
-  };
+  # programs.obs-studio = {
+  #   enable = true;
+  # };
 
   programs.git = {
     # extraConfig.credential.helper = "manager";
