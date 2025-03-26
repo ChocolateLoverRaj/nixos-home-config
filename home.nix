@@ -34,24 +34,24 @@
   # environment.
   home.packages = with pkgs; [
     nodejs
-    github-desktop
-    parabolic
+    # github-desktop
+    # parabolic
     element-desktop
-    fractal
+    # fractal
     discord
     nixpkgs-fmt
     nixfmt-rfc-style
     tldr
     distrobox
-    toolbox
+    # toolbox
     baobab
     # mission-center
     eza
     # This looks super duper cool
     btop
-    flameshot
-    kdePackages.kdenlive
-    ungoogled-chromium
+    # flameshot
+    # kdePackages.kdenlive
+    # ungoogled-chromium
     firefox
     libreoffice-qt
     # lunar-client
@@ -62,23 +62,23 @@
     qbittorrent
     # (callPackage ./tabby.nix { })
     brave
-    freecad
+    # freecad
     zed-editor
     # radicle-node
-    gh
-    kdePackages.kasts
+    # gh
+    # kdePackages.kasts
     # mindustry-wayland
-    kdePackages.kcalc
+    # kdePackages.kcalc
     # jetbrains.rust-rover
     # jetbrains.gateway
-    hoppscotch
-    fritzing
+    # hoppscotch
+    # fritzing
     # librepcb
     mangohud
-    kicad
+    # kicad
     jdk
-    spacedrive
-    git-credential-manager
+    # spacedrive
+    # git-credential-manager
     sshfs
     qalculate-qt
     nixd
@@ -86,8 +86,8 @@
     rclone
     rclone-browser
     ytdownloader
-    networkmanagerapplet
-    thunderbird
+    # networkmanagerapplet
+    # thunderbird
     ptyxis
     tuba
     ktailctl
@@ -151,11 +151,4 @@
   # programs.obs-studio = {
   #   enable = true;
   # };
-
-  programs.git = {
-    # extraConfig.credential.helper = "manager";
-    # extraConfig.credential."https://github.com".username = "ChocolateLoverRaj";
-    # extraConfig.credential.credentialStore = "cache";
-    enable = true;
-  };
 }
