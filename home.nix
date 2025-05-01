@@ -88,7 +88,6 @@
     ytdownloader
     # networkmanagerapplet
     # thunderbird
-    ptyxis
     tuba
     ktailctl
   ];
