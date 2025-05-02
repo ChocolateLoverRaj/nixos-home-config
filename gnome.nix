@@ -74,10 +74,11 @@
     };
     "org/gnome/shell" = {
       favorite-apps = [
-        "org.gnome.Nautilus.desktop"
-        "brave-browser.desktop"
+        "firefox.desktop"
         "org.gnome.Ptyxis.desktop"
         "dev.zed.Zed.desktop"
+        "org.gnome.Nautilus.desktop"
+        "io.github.Qalculate.qalculate-qt.desktop"
       ];
     };
     "org/gnome/shell/keybindings" = {
