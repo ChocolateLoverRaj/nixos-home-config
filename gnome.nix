@@ -80,6 +80,9 @@
         "dev.zed.Zed.desktop"
       ];
     };
+    "org/gnome/shell/keybindings" = {
+      toggle-message-tray = [ ];
+    };
     "org/gnome/shell/extensions/vitals" = {
       show-battery = true;
       show-gpu = true;
@@ -88,6 +91,9 @@
         "_battery_rate_"
       ];
       position-in-panel = 2;
+    };
+    "org/gnome/shell/extensions/clipboard-indicator" = {
+      toggle-menu = [ "<Super>v" ];
     };
     "org/gnome/mutter" = {
       edge-tiling = true;
@@ -112,6 +118,10 @@
     };
     "org/gnome/nautilus/preferences" = {
       search-filter-time-type = "last_modified";
+    };
+    "org/gnome/shell/extensions/lockkeys" = {
+      notification-preferences = "osd";
+      style = "show-hide-capslock";
     };
   };
 }
