@@ -95,6 +95,7 @@
     };
     "org/gnome/shell/extensions/clipboard-indicator" = {
       toggle-menu = [ "<Super>v" ];
+      history-size = 10000;
     };
     "org/gnome/mutter" = {
       edge-tiling = true;
