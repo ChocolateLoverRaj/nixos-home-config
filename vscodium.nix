@@ -4,13 +4,14 @@
   programs.vscode = {
     enable = true;
     package = pkgs.vscodium;
+    mutableExtensionsDir = false;
     profiles.default = {
       extensions = with pkgs.vscode-extensions; [
         jnoortheen.nix-ide
         rust-lang.rust-analyzer
         mkhl.direnv
-        ms-vscode.cpptools-extension-pack
         ms-vscode-remote.remote-ssh
+        vadimcn.vscode-lldb
       ];
       keybindings = [
         {
