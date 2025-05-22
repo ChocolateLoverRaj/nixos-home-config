@@ -12,6 +12,7 @@
         mkhl.direnv
         ms-vscode-remote.remote-ssh
         vadimcn.vscode-lldb
+        ms-vscode.hexeditor
       ];
       keybindings = [
         {
