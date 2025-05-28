@@ -13,6 +13,7 @@
         ms-vscode-remote.remote-ssh
         vadimcn.vscode-lldb
         ms-vscode.hexeditor
+        streetsidesoftware.code-spell-checker
       ];
       keybindings = [
         {
