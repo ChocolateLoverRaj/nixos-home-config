@@ -14,6 +14,7 @@
         vadimcn.vscode-lldb
         ms-vscode.hexeditor
         streetsidesoftware.code-spell-checker
+        tamasfe.even-better-toml
       ];
       keybindings = [
         {
