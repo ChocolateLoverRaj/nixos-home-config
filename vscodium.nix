@@ -35,6 +35,7 @@
           "bash" = null;
         };
         "git.openRepositoryInParentFolders" = "always";
+        "explorer.confirmDragAndDrop" = false;
       };
     };
   };
