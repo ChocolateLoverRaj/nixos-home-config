@@ -16,15 +16,14 @@
         home-manager.follows = "home-manager";
       };
     };
-    vscode-server.url = "github:nix-community/nixos-vscode-server";
   };
 
   outputs =
-    { nixpkgs
-    , home-manager
-    , plasma-manager
-    , vscode-server
-    , ...
+    {
+      nixpkgs,
+      home-manager,
+      plasma-manager,
+      ...
     }:
     let
       system = "x86_64-linux";

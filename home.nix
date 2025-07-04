@@ -1,5 +1,4 @@
 {
-  config,
   pkgs,
   lib,
   ...
@@ -90,6 +89,8 @@
     # thunderbird
     tuba
     ktailctl
+    pinta
+    tokei
   ];
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage

@@ -15,6 +15,8 @@
         ms-vscode.hexeditor
         streetsidesoftware.code-spell-checker
         tamasfe.even-better-toml
+        gruntfuggly.todo-tree
+        a5huynh.vscode-ron
       ];
       keybindings = [
         {
