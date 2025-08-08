@@ -43,8 +43,6 @@
     tldr
     distrobox
     # toolbox
-    baobab
-    # mission-center
     eza
     # This looks super duper cool
     btop
@@ -60,7 +58,6 @@
     # freetube
     qbittorrent
     # (callPackage ./tabby.nix { })
-    brave
     # freecad
     zed-editor
     # radicle-node

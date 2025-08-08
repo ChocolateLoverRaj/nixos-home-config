@@ -38,6 +38,8 @@
         };
         "git.openRepositoryInParentFolders" = "always";
         "explorer.confirmDragAndDrop" = false;
+        "git.blame.statusBarItem.enabled" = true;
+        "git.blame.editorDecoration.enabled" = true;
       };
     };
   };
