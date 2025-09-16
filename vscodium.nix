@@ -6,18 +6,28 @@
     package = pkgs.vscodium;
     mutableExtensionsDir = false;
     profiles.default = {
-      extensions = with pkgs.vscode-extensions; [
-        jnoortheen.nix-ide
-        rust-lang.rust-analyzer
-        mkhl.direnv
-        ms-vscode-remote.remote-ssh
-        vadimcn.vscode-lldb
-        ms-vscode.hexeditor
-        streetsidesoftware.code-spell-checker
-        tamasfe.even-better-toml
-        gruntfuggly.todo-tree
-        a5huynh.vscode-ron
-      ];
+      extensions =
+        with pkgs.vscode-extensions;
+        [
+          jnoortheen.nix-ide
+          rust-lang.rust-analyzer
+          mkhl.direnv
+          ms-vscode-remote.remote-ssh
+          vadimcn.vscode-lldb
+          ms-vscode.hexeditor
+          streetsidesoftware.code-spell-checker
+          tamasfe.even-better-toml
+          gruntfuggly.todo-tree
+          a5huynh.vscode-ron
+        ]
+        ++ pkgs.vscode-utils.extensionsFromVscodeMarketplace [
+          {
+            name = "graphviz-preview";
+            publisher = "EFanZh";
+            version = "1.7.5";
+            hash = "sha256-SYYWfVMEjwBWXLcFp8rDmqhXCef7ixrrxpdcybJXLGg=";
+          }
+        ];
       keybindings = [
         {
           key = "ctrl+t";
