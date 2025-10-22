@@ -21,7 +21,7 @@
 
   imports = [
     ./git.nix
-    ./vscodium.nix
+    # ./vscodium.nix
     ./plasma.nix
     ./bash.nix
     ./gnome.nix
@@ -72,7 +72,7 @@
     # librepcb
     mangohud
     # kicad
-    jdk
+    jdk24
     # spacedrive
     # git-credential-manager
     sshfs
@@ -88,6 +88,7 @@
     ktailctl
     pinta
     tokei
+    vscode
   ];
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
