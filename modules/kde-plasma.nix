@@ -1,6 +1,9 @@
 { ... }:
 
 {
+  imports = [
+    ./desktop-environment.nix
+  ];
   programs.plasma = {
     enable = true;
 

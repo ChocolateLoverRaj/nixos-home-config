@@ -1,9 +1,13 @@
 { pkgs, ... }:
-
 {
+  programs.direnv = {
+    enable = true;
+    enableBashIntegration = true; # see note on other shells below
+    nix-direnv.enable = true;
+  };
   programs.vscode = {
     enable = true;
-    # package = pkgs.vscodium;
+    package = pkgs.vscodium;
     mutableExtensionsDir = true;
     profiles.default = {
       extensions =
@@ -20,6 +24,8 @@
           gruntfuggly.todo-tree
           a5huynh.vscode-ron
           redhat.java
+          vscjava.vscode-java-test
+          vscjava.vscode-java-debug
         ]
         ++ pkgs.vscode-utils.extensionsFromVscodeMarketplace [
           {
@@ -39,7 +45,6 @@
         "editor.formatOnSave" = true;
         "git.autofetch" = true;
         "git.confirmSync" = false;
-        "workbench.editor.wrapTabs" = true;
         "tabnine.experimentalAutoImports" = true;
         "git.enableSmartCommit" = true;
         "rust-analyzer.procMacro.attributes.enable" = true;
@@ -51,7 +56,29 @@
         "explorer.confirmDragAndDrop" = false;
         "git.blame.statusBarItem.enabled" = true;
         "git.blame.editorDecoration.enabled" = true;
+        "redhat.telemetry.enabled" = false;
+        "workbench.editor.wrapTabs" = true;
+        "workbench.secondarySideBar.defaultVisibility" = "hidden";
       };
     };
   };
+  programs.zed-editor = {
+    enable = true;
+    installRemoteServer = true;
+  };
+  home.packages = with pkgs; [
+    # For Java development
+    python3
+    # As a calculator
+    nodejs
+    # To edit .nix files
+    nixpkgs-fmt
+    nixfmt-rfc-style
+    nixd
+    nil
+    # To use containers
+    distrobox
+    sshfs
+    tokei
+  ];
 }
