@@ -1,6 +1,9 @@
 { pkgs, ... }:
 
 {
+  imports = [
+    ./desktop-environment.nix
+  ];
   home.packages = with pkgs; [
     ptyxis
     dconf-editor

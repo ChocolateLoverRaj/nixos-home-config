@@ -16,7 +16,6 @@
           jnoortheen.nix-ide
           rust-lang.rust-analyzer
           mkhl.direnv
-          ms-vscode-remote.remote-ssh
           vadimcn.vscode-lldb
           ms-vscode.hexeditor
           streetsidesoftware.code-spell-checker
