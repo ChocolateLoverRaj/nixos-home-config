@@ -67,6 +67,7 @@
   };
   home.packages = with pkgs; [
     # For Java development
+    jdk
     python3
     # As a calculator
     nodejs
