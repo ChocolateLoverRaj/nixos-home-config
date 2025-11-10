@@ -11,10 +11,12 @@
     tuba
     ktailctl
     pinta
+    slack
   ];
   nixpkgs.config.allowUnfreePredicate =
     pkg:
     builtins.elem (lib.getName pkg) [
       "discord"
+      "slack"
     ];
 }
