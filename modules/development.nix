@@ -72,7 +72,6 @@
     # As a calculator
     nodejs
     # To edit .nix files
-    nixpkgs-fmt
     nixfmt-rfc-style
     nixd
     nil
