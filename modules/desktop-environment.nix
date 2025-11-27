@@ -8,7 +8,7 @@
     mangohud
     qalculate-qt
     ytdownloader
-    tuba
+    # tuba (broken)
     ktailctl
     pinta
     slack

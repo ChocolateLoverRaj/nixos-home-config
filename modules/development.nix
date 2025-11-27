@@ -8,7 +8,7 @@
   programs.vscode = {
     enable = true;
     package = pkgs.vscodium;
-    mutableExtensionsDir = true;
+    mutableExtensionsDir = false;
     profiles.default = {
       extensions =
         with pkgs.vscode-extensions;
@@ -25,6 +25,8 @@
           redhat.java
           vscjava.vscode-java-test
           vscjava.vscode-java-debug
+          marp-team.marp-vscode
+          ms-python.python
         ]
         ++ pkgs.vscode-utils.extensionsFromVscodeMarketplace [
           {

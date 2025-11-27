@@ -38,9 +38,6 @@
         package = lock-keys;
       }
       {
-        package = custom-osd;
-      }
-      {
         package = happy-appy-hotkey;
       }
       {
@@ -98,7 +95,7 @@
     };
     "org/gnome/shell/extensions/clipboard-indicator" = {
       toggle-menu = [ "<Super>v" ];
-      history-size = 10000;
+      history-size = 25;
     };
     "org/gnome/mutter" = {
       edge-tiling = true;
