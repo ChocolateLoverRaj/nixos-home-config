@@ -53,6 +53,7 @@
         inherit pkgs;
         modules = [
           ./hosts/zephy.nix
+          plasma-manager.homeManagerModules.plasma-manager
         ];
       };
     };
