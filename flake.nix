@@ -49,5 +49,11 @@
           ./hosts/robo360.nix
         ];
       };
+      homeConfigurations."rajas@zephy" = home-manager.lib.homeManagerConfiguration {
+        inherit pkgs;
+        modules = [
+          ./hosts/zephy.nix
+        ];
+      };
     };
 }
