@@ -81,5 +81,7 @@
     distrobox
     sshfs
     tokei
+    # To make wiring diagrams
+    # fritzing
   ];
 }
