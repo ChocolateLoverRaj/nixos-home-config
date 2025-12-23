@@ -6,6 +6,7 @@
     prismlauncher
     qbittorrent
     mangohud
+    mangojuice
     qalculate-qt
     ytdownloader
     # tuba (broken)
