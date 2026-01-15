@@ -13,6 +13,7 @@
     ktailctl
     pinta
     slack
+    kicad
   ];
   nixpkgs.config.allowUnfreePredicate =
     pkg:
