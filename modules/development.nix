@@ -22,11 +22,9 @@
           tamasfe.even-better-toml
           gruntfuggly.todo-tree
           a5huynh.vscode-ron
-          redhat.java
-          vscjava.vscode-java-test
-          vscjava.vscode-java-debug
           marp-team.marp-vscode
           ms-python.python
+          shd101wyy.markdown-preview-enhanced
         ]
         ++ pkgs.vscode-utils.extensionsFromVscodeMarketplace [
           {
