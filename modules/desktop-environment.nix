@@ -14,6 +14,7 @@
     pinta
     slack
     kicad
+    joplin-desktop
   ];
   nixpkgs.config.allowUnfreePredicate =
     pkg:
