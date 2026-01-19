@@ -15,6 +15,7 @@
     slack
     kicad
     joplin-desktop
+    fritzing
   ];
   nixpkgs.config.allowUnfreePredicate =
     pkg:
