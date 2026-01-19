@@ -78,7 +78,7 @@
     # As a calculator
     nodejs
     # To edit .nix files
-    nixfmt-rfc-style
+    nixfmt
     nixd
     nil
     # To use containers
