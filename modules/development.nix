@@ -25,6 +25,7 @@
           marp-team.marp-vscode
           ms-python.python
           shd101wyy.markdown-preview-enhanced
+          vscodevim.vim
         ]
         ++ pkgs.vscode-utils.extensionsFromVscodeMarketplace [
           {
@@ -64,6 +65,9 @@
         "redhat.telemetry.enabled" = false;
         "workbench.editor.wrapTabs" = true;
         "workbench.secondarySideBar.defaultVisibility" = "hidden";
+        "vim.handleKeys" = {
+          "<C-space>" = false;
+        };
       };
     };
   };
