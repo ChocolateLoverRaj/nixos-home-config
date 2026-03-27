@@ -94,5 +94,6 @@
     # fritzing
     # For using signal analyzers
     pulseview
+    gh
   ];
 }
