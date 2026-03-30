@@ -95,5 +95,6 @@
     # For using signal analyzers
     pulseview
     gh
+    git-statuses
   ];
 }
