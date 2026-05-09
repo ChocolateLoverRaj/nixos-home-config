@@ -6,9 +6,8 @@
     enableBashIntegration = true; # see note on other shells below
     nix-direnv.enable = true;
   };
-  programs.vscode = {
+  programs.vscodium = {
     enable = true;
-    package = pkgs.vscodium;
     mutableExtensionsDir = false;
     profiles.default = {
       extensions =

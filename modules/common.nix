@@ -56,4 +56,6 @@
       uris = [ "qemu:///system" ];
     };
   };
+
+  programs.vim.enable = true;
 }
