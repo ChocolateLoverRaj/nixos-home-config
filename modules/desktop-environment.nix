@@ -23,4 +23,6 @@
       "discord"
       "slack"
     ];
+
+  services.syncthing.enable = true;
 }
