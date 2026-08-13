@@ -9,8 +9,6 @@
     mangojuice
     qalculate-qt
     ytdownloader
-    # tuba (broken)
-    ktailctl
     pinta
     slack
     kicad

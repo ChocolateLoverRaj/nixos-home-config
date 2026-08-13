@@ -89,8 +89,6 @@
     distrobox
     sshfs
     tokei
-    # To make wiring diagrams
-    # fritzing
     # For using signal analyzers
     pulseview
     gh

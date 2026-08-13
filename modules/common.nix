@@ -21,10 +21,6 @@
     enable = true;
   };
 
-  programs.nushell = {
-    enable = true;
-  };
-
   programs.starship = {
     enable = true;
   };
@@ -40,12 +36,8 @@
     enable = true;
   };
 
-  programs.fzf = {
-    enable = true;
-  };
-
   home.sessionVariables = {
-    EDITOR = "nano";
+    EDITOR = "vim";
   };
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
