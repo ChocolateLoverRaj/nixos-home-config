@@ -19,6 +19,13 @@
   };
   programs.bash = {
     enable = true;
+    initExtra = ''
+      # Press F5 to instantly execute the previous command
+      bind '"\e[15~": "!!\n"'
+    '';
+    shellAliases = {
+      f = "pay-respects";
+    };
   };
 
   programs.starship = {
@@ -29,11 +36,17 @@
     enable = true;
     settings = {
       filter_mode_shell_up_key_binding = "session";
+      enter_accept = true;
     };
   };
 
   programs.zoxide = {
     enable = true;
+  };
+
+  programs.pay-respects = {
+    enable = true;
+    enableBashIntegration = true;
   };
 
   home.sessionVariables = {
